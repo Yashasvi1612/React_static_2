@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(45, 38, 38);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.bg-image {
+  position: absolute;
+  right: -12%;
+  bottom: 0;
+  height: 100%;
+  width: 60%;
+  background-image: url('/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  filter: grayscale(100%);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.Facts {
+  font-size: 5vh;
+  color: white;
+  margin-top: 1%;
+}
+
+.lists {
+  color: white;
+  list-style-type: disc;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+ul li::marker {
+  color: rgb(75, 212, 236);
+  font-size: 40px;
+}
+
+.Heading {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  color: rgb(75, 212, 236);
+  margin: 2%;
+  background-color: rgb(33, 30, 30);
+}
+
+
